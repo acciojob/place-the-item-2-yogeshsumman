@@ -1,2 +1,33 @@
+.holder {
+    display: flex;
+    flex-wrap: wrap; /* Ensures items wrap when needed */
+    justify-content: center; /* Centers items in the row */
+    align-items: center; /* Centers items vertically */
+    gap: 0px; /* Ensures items are squashed together initially */
+}
 
-/* Your CSS Code here. */
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black; /* Optional: for visibility */
+    font-size: 20px; /* Optional: adjust text size */
+    padding: 10px; /* Adjust padding to fit */
+    width: 100px; /* Adjust size */
+    height: 100px;
+    color: black; /* Text color */
+    font-weight: bold;
+}
+
+/* Assign colors to each item */
+.item:nth-child(1) {
+    background-color: red;
+}
+
+.item:nth-child(2) {
+    background-color: blue;
+}
+
+.item:nth-child(3) {
+    background-color: green;
+}
